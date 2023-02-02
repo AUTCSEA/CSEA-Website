@@ -9,5 +9,9 @@ npm install
 
 run on localhost via vite bundler:
 ```
+npm start
+```
+or
+```
 npm run dev
 ```
