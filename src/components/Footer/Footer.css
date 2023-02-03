@@ -1,91 +1,72 @@
-.footerContainer {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    height: 100px;
-    background-color: #EAA875;
-    position: absolute;
-    bottom: 0;
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaa875;
+
+  /* probably wanna remove this after there is content */
+  position: absolute;
+  bottom: 0;
 }
 
-.logoSocialsContainer {
-    display: flex;
-    /* flex: 1; */
-    margin-left: 15px;
-    height: 100%;
-
+.footer-logo {
+  width: 5rem;
 }
 
-
-
-.logo {
-    transform: scale(1.0);
+.footer-logo__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
 }
 
-.socialsWrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-
+.footer-social__icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.socialIcon {
-    transform: scale(1.4);
-    padding: 5px;
+.footer-links__list {
+  display: flex;
+  flex-direction: column wrap;
 }
 
-.linksWrapper {
-    /* flex: 1; */
-    width: 100%;
-    display: flex;
-    height: 100%;
-    justify-content: flex-end;
-    align-items: center;
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 0.2rem;
 }
 
-li {
-    display: inline;
-    padding: 20px;
-    font-size: 20px;
+.footer-link {
+  font-size: 0.5rem;
+  padding: 0.5rem;
 }
 
-a {
-    padding: 5px;
-    text-decoration: none;
+@media (width >= 452px) {
+  .footer-logo__socials {
+    flex-direction: row;
+    gap: 1rem;
+  }
 
+  .footer-logo {
+    padding: 0.2rem;
+    width: 5rem;
+  }
 
+  .footer-links__list {
+    flex-direction: row;
+  }
 }
 
-a:visited {
-    color: black;
-}
+@media (width >= 768px) {
+  .footer-logo {
+    width: 7rem;
+  }
 
-@media (max-width: 425px) {
-
-    .footerContainer {
-        height: 170px;
-    }
-
-
-    li {
-        display: block;
-        padding: 10px;
-        margin-right: 20px;
-    }
-
-    .logoSocialsContainer {
-        flex-direction: column;
-        margin-left: 20px;
-        justify-content: center;
-    }
-
-    .socialsWrapper {
-        margin-left: 0;
-        /* margin-top: 10px; */
-        justify-content: center;
-    }
-
-    .logo {
-        transform: scale(0.8);
-    }
+  .footer-link {
+    font-size: 1rem;
+  }
 }
