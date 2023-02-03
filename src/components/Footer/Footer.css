@@ -1,0 +1,72 @@
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaa875;
+
+  /* probably wanna remove this after there is content */
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-logo {
+  width: 5rem;
+}
+
+.footer-logo__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.footer-social__icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer-links__list {
+  display: flex;
+  flex-direction: column wrap;
+}
+
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 0.2rem;
+}
+
+.footer-link {
+  font-size: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (width >= 452px) {
+  .footer-logo__socials {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    padding: 0.2rem;
+    width: 5rem;
+  }
+
+  .footer-links__list {
+    flex-direction: row;
+  }
+}
+
+@media (width >= 768px) {
+  .footer-logo {
+    width: 7rem;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+}

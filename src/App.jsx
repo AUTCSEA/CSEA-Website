@@ -12,6 +12,7 @@ import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
 
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 const NavbarWrapper = () => {
   return (
@@ -22,6 +23,9 @@ const NavbarWrapper = () => {
       <main>
         <Outlet />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
