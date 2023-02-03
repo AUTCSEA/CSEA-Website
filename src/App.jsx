@@ -1,8 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Navbar from "./components/Navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./App.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+]);
 
 function App() {
   return (
@@ -11,7 +18,7 @@ function App() {
         <Navbar />
       </nav>
       <main>
-        <LandingPage />;
+        <RouterProvider router={router} />
       </main>
     </>
   );
