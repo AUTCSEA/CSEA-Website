@@ -1,18 +1,8 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
+import React from "react";
+import Navbar from "../../components/Navbar";
 
 const LandingPage = () => {
-  return (
-    <div style={{"height": "900px", "width": "100%"}}>
-        <Navbar/>
-        LandingPage
-        
-        
-        </div>
-  )
-}
+  return <div>LandingPage</div>;
+};
 
-
-
-
-export default LandingPage
+export default LandingPage;
