@@ -52,7 +52,7 @@ a {
   padding-right: 20px;
 }
 
-@media (max-width: 800px) {
+@media (width <= 768px) {
   .linksWrapper {
     display: none;
   }
