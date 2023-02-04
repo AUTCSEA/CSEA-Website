@@ -3,47 +3,47 @@ import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import logo from "../assets/images/Orange_CSEA.png";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = (props) => {
   return (
-    <nav className="nav">
-      <div className="navbarCont">
+    <nav className={styles.nav}>
+      <div className={styles.navbarCont}>
         <Link to={"/"}>
-          <img src={logo} className="logo"></img>
+          <img src={logo} className={styles.logo}></img>
         </Link>
 
-        <div className="linksWrapper">
+        <div className={styles.linksWrapper}>
           <ul>
-            <li>
+            <li className={styles.listItem}>
               <NavLink
                 to="/about"
-                className={({ isActive }) => isActive && "active"}
+                className={({ isActive }) => isActive && styles.active}
               >
                 About Us
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/sponsors"
-                className={({ isActive }) => isActive && "active"}
+            <li className={styles.listItem}>
+              <Link
+                to=""
+                className={({ isActive }) => isActive && styles.active}
               >
                 Sponsors
-              </NavLink>
+              </Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to="">Events</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to="">Become a member</Link>
             </li>
           </ul>
         </div>
-        <div className="iconWrapper">
+        <div className={styles.iconWrapper}>
           <a>
             <MenuIcon
               style={{ color: "white", fontSize: "35px" }}
-              className="icon"
+              className={styles.icon}
             />
           </a>
         </div>
