@@ -17,7 +17,7 @@
 .logo {
   position: absolute;
   top: 0;
-  margin-left: 100px;
+  margin-left: 4.5rem;
 }
 
 .linksWrapper {
@@ -59,6 +59,7 @@ a {
 
   .logo {
     margin-left: 30px;
+    max-width: 10rem;
   }
 
   .iconWrapper {
