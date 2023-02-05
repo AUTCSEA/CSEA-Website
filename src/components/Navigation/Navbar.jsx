@@ -26,18 +26,16 @@ const Navbar = (props) => {
             <li className={styles.listItem}>
               <NavLink
                 to="/about"
-                className={({ isActive }) => isActive && styles.active}
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
                 onClick={closeMobileNav}
               >
                 About Us
               </NavLink>
             </li>
             <li className={styles.listItem}>
-              <Link
-                to=""
-                className={({ isActive }) => isActive && styles.active}
-                onClick={closeMobileNav}
-              >
+              <Link to="" onClick={closeMobileNav}>
                 Sponsors
               </Link>
             </li>
@@ -70,14 +68,7 @@ const Navbar = (props) => {
                 </NavLink>
               </li>
               <li className={styles.listItem}>
-                <Link
-                  to=""
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  Sponsors
-                </Link>
+                <Link to="">Sponsors</Link>
               </li>
               <li className={styles.listItem}>
                 <Link to="">Events</Link>
