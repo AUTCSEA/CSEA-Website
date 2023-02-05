@@ -5,15 +5,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-logo__socials">
-        <img src={Logo} alt="Logo" className="footer-logo" />
+    <div className={styles.container}>
+      <div className={styles.logoSocials}>
+        <img src={Logo} alt="Logo" className={styles.logo} />
 
-        <div className="footer-social__icons">
+        <div className={styles.socialIcons}>
           <a href="https://www.instagram.com/autcsea/">
             <InstagramIcon sx={{ color: "black" }} fontSize="medium" />
           </a>
@@ -26,10 +26,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <ul className="footer-links__list">
-        <li className="footer-link">Go to top</li>
-        <li className="footer-link">About us</li>
-        <li className="footer-link">Contact</li>
+      <ul className={styles.linksList}>
+        <li className={styles.link}>Go to top</li>
+        <li className={styles.link}>About us</li>
+        <li className={styles.link}>Contact</li>
       </ul>
     </div>
   );
