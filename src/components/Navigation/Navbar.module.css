@@ -52,6 +52,11 @@ a {
   padding-right: 20px;
 }
 
+.mobileOverlay {
+  display: none;
+  z-index: 11;
+}
+
 @media (width <= 768px) {
   .linksWrapper {
     display: none;
@@ -64,5 +69,19 @@ a {
 
   .iconWrapper {
     display: flex;
+  }
+
+  .mobileOverlay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    width: 10rem;
+    background-color: red;
+  }
+
+  .hide {
+    display: none;
   }
 }

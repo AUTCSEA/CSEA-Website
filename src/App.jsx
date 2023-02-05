@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navigation/Navbar";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
 
