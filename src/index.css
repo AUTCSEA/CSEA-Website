@@ -1,5 +1,8 @@
 :root {
   font-family: "Open Sans", "Courier New", Courier, monospace;
+
+  /* CSS Variables */
+  --primary: #ff7000;
 }
 
 * {

@@ -1,15 +1,8 @@
-import {
-  Route,
-  Routes,
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Navbar from "./components/Navigation/Navbar";
 import About from "./pages/About/About";
-import Contacts from "./pages/Contacts/Contacts";
 
 import "./App.css";
 import Footer from "./components/Footer/Footer";
@@ -35,6 +28,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <NavbarWrapper />,
     children: [
+      // VVV Put new routes here VVV
       {
         path: "/",
         element: <LandingPage />,
