@@ -49,7 +49,7 @@ const Navbar = (props) => {
         </MobileNav>
       )}
       {showMobileNav && <Backdrop close={closeMobileNav} />}
-      <nav className={styles.nav}>
+      <nav className={styles.nav} id="nav">
         <div className={styles.navbarCont}>
           <Link to={"/"}>
             <img src={logo} className={styles.logo}></img>
@@ -74,7 +74,9 @@ const Navbar = (props) => {
                 <Link to="">Events</Link>
               </li>
               <li className={styles.listItem}>
-                <Link to="">Become a member</Link>
+                <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
+                  Become a member
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Logo from "../../assets/images/Transparent_CSEA.png";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -27,9 +29,21 @@ const Footer = () => {
       </div>
 
       <ul className={styles.linksList}>
-        <li className={styles.link}>Go to top</li>
-        <li className={styles.link}>About us</li>
-        <li className={styles.link}>Contact</li>
+        <li className={styles.link}>
+          <a className={styles.footerLink} href="#nav">
+            Go to top
+          </a>
+        </li>
+        <li className={styles.link}>
+          <Link className={styles.footerLink} to="/about">
+            About us
+          </Link>
+        </li>
+        <li className={styles.link}>
+          <Link className={styles.footerLink} to="/contact">
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );

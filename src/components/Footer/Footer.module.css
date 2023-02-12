@@ -6,8 +6,8 @@
   background-color: #eaa875;
 
   /* probably wanna remove this after there is content */
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .logo {
@@ -43,6 +43,11 @@
 .link {
   list-style: none;
   padding: 0.5rem;
+}
+
+.footerLink {
+  color: inherit;
+  font-weight: inherit;
 }
 
 @media (width >= 452px) {
