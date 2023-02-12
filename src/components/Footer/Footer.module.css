@@ -4,10 +4,9 @@
   align-items: center;
   justify-content: space-between;
   background-color: #eaa875;
-
-  /* probably wanna remove this after there is content */
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .logo {
