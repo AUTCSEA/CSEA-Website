@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 
 import styles from "./Navbar.module.css";
 import Backdrop from "../Backdrop";
+import Button from "../Button/Button";
 
 const Navbar = (props) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -115,6 +116,7 @@ const Navbar = (props) => {
                 </NavLink>
               </li>
               <li className={styles.listItem}>
+                {/* <Button title="Become a member" /> */}
                 <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
                   Become a member
                 </Link>

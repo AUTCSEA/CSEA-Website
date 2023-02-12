@@ -1,10 +1,10 @@
 .nav {
   display: flex;
+  position: sticky;
+  top: 0;
   height: 50px;
   width: 100%;
   background-color: #ff7000;
-  position: absolute;
-  top: 0;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   z-index: 1;
 }
@@ -16,13 +16,10 @@
 }
 
 .logo {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
   margin-left: 4.5rem;
-}
-
-.logo:hover {
-  box-shadow: 1px 1px 5px var(--secondary);
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 .linksWrapper {
