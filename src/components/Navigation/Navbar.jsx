@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../../assets/images/Orange_CSEA.png";
+import logo from "/images/Orange_CSEA.png";
 
 import MobileNav from "./MobileNav";
 
@@ -25,33 +25,44 @@ const Navbar = (props) => {
           <ul className={styles.mobileOverlay}>
             <li className={styles.listItem}>
               <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                onClick={closeMobileNav}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className={styles.listItem}>
+              <NavLink
                 to="/about"
-                className={({ isActive }) => isActive && styles.active}
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
                 onClick={closeMobileNav}
               >
                 About Us
               </NavLink>
             </li>
             <li className={styles.listItem}>
-              <Link
-                to=""
-                className={({ isActive }) => isActive && styles.active}
-                onClick={closeMobileNav}
-              >
+              <Link to="/sponsors" onClick={closeMobileNav}>
                 Sponsors
               </Link>
             </li>
             <li className={styles.listItem}>
-              <Link to="">Events</Link>
+              <Link to="/events">Events</Link>
             </li>
             <li className={styles.listItem}>
-              <Link to="">Become a member</Link>
+              <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
+                Become a member
+              </Link>
             </li>
           </ul>
         </MobileNav>
       )}
       {showMobileNav && <Backdrop close={closeMobileNav} />}
-      <nav className={styles.nav}>
+      <nav className={styles.nav} id="nav">
         <div className={styles.navbarCont}>
           <Link to={"/"}>
             <img src={logo} className={styles.logo}></img>
@@ -70,20 +81,29 @@ const Navbar = (props) => {
                 </NavLink>
               </li>
               <li className={styles.listItem}>
-                <Link
-                  to=""
+                <NavLink
+                  to="/sponsors"
                   className={({ isActive }) =>
                     isActive ? styles.active : undefined
                   }
                 >
                   Sponsors
+                </NavLink>
+              </li>
+              <li className={styles.listItem}>
+                <NavLink
+                  to="/events"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  Events
+                </NavLink>
+              </li>
+              <li className={styles.listItem}>
+                <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
+                  Become a member
                 </Link>
-              </li>
-              <li className={styles.listItem}>
-                <Link to="">Events</Link>
-              </li>
-              <li className={styles.listItem}>
-                <Link to="">Become a member</Link>
               </li>
             </ul>
           </div>

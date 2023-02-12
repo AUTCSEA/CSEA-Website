@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 1px 1px 5px var(--secondary);
+}
+
+.primary {
+  border: var(--primary) solid 3px;
+}
+
+.secondary {
+  border: var(--secondary) solid 3px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+@media (width >= 768px) {
+  .card {
+    width: 18rem;
+  }
+}

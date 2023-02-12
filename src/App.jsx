@@ -1,18 +1,14 @@
-import {
-  Route,
-  Routes,
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Navbar from "./components/Navigation/Navbar";
 import About from "./pages/About/About";
-import Contacts from "./pages/Contacts/Contacts";
+import Sponsors from "./pages/Sponsors/Sponsors";
+import Events from "./pages/Events/Events";
+
+import Navbar from "./components/Navigation/Navbar";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 
 const NavbarWrapper = () => {
   return (
@@ -35,6 +31,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <NavbarWrapper />,
     children: [
+      // VVV Put new routes here VVV
       {
         path: "/",
         element: <LandingPage />,
@@ -42,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/sponsors",
+        element: <Sponsors />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
     ],
   },
