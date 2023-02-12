@@ -45,7 +45,7 @@ MAIN IMAGE
   background-color: white;
   position: absolute;
   right: 10%;
-  bottom: 40%;
+  bottom: 0%;
   color: var(--secondary);
   border-radius: 5px;
   box-shadow: 5px 5px 20px black;
@@ -58,6 +58,10 @@ MAIN IMAGE
 .title {
   padding: 3rem 0;
   text-align: center;
+}
+
+.description {
+  font-size: 1.25rem;
 }
 
 .grid {
@@ -142,6 +146,9 @@ SPONSORSHIP
 }
 
 @media (width >= 768px) {
+  .mission {
+    bottom: 40%;
+  }
   .memberContainer {
     flex-direction: row;
   }

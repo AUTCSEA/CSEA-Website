@@ -44,8 +44,12 @@ const LandingPage = () => {
         />
         <motion.div
           className={styles.mission}
-          initial={{ opacity: 0, scale: 0.5, bottom: "50%" }}
-          animate={{ opacity: 1, scale: 1, bottom: "40%" }}
+          initial={{ opacity: 0, scale: 0.5, bottom: "40%" }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            bottom: window.innerWidth < 768 ? "10%" : "40%",
+          }}
           transition={{ duration: 0.5 }}
         >
           <div className={styles.bar} />
@@ -63,7 +67,7 @@ const LandingPage = () => {
       {/* What we do */}
       <div className={styles.container}>
         <h1 className={styles.title}>What we do?</h1>
-        <p>
+        <p className={styles.description}>
           We are a student run club for AUT but any students from other
           education are welcome!
         </p>
