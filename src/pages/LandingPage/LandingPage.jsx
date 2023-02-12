@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Card from "../../components/Card/Card";
 import Button from "../../components/Button/Button";
 
@@ -18,9 +20,20 @@ const LandingPage = () => {
     <>
       {/* Top image */}
       <div className={styles.imageContainer}>
-        <img src={MainImage} className={styles.image} />
-        <div className={styles.mission}>
-          <div className={styles.bar}></div>
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          src={MainImage}
+          className={styles.image}
+        />
+        <motion.div
+          className={styles.mission}
+          initial={{ opacity: 0, scale: 0.5, bottom: "50%" }}
+          animate={{ opacity: 1, scale: 1, bottom: "40%" }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className={styles.bar} />
           <div className={styles.barText}>
             <h2 className={styles.brand}>
               Computer Science & Engineering Association
@@ -29,7 +42,7 @@ const LandingPage = () => {
               Connecting students with the industry
             </h3>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* What we do */}
@@ -39,33 +52,55 @@ const LandingPage = () => {
           We are a student run club for AUT but any students from other
           education are welcome!
         </p>
-        <div className={styles.grid}>
-          <Card
-            title="Host Events"
-            image={Event}
-            style="primary"
-            description="We regularly host events with the help from our sponsors. 
+        <motion.div className={styles.grid}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.25, duration: 0.5 }}
+          >
+            <Card
+              title="Host Events"
+              image={Event}
+              style="primary"
+              description="We regularly host events with the help from our sponsors. 
             These events include hackathons, workshops and talk shows"
-          />
-          <Card
-            title="Meet experts from industry"
-            style="secondary"
-            image={Coach}
-            description="We invite many experts to our events. Students get a chance to interact
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <Card
+              title="Meet experts from industry"
+              style="secondary"
+              image={Coach}
+              description="We invite many experts to our events. Students get a chance to interact
             with our hosts and gain knowledge about the software industry"
-          />
-          <Card
-            title="Gain future insights"
-            style="primary"
-            image={Brain}
-            description="From attending the events and meeting experts, our students
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.75, duration: 0.5 }}
+          >
+            <Card
+              title="Gain future insights"
+              style="primary"
+              image={Brain}
+              description="From attending the events and meeting experts, our students
             get a better knowledge and insights about the software engineering industry."
-          />
-        </div>
+            />
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Become a member */}
-      <div className={styles.memberContainer}>
+      <motion.div
+        className={styles.memberContainer}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <div className={styles.memberTitle}>
           <h1>Become a member!</h1>
           <p style={{ marginBottom: "2rem" }}>
@@ -79,10 +114,14 @@ const LandingPage = () => {
           />
         </div>
 
-        <div className={styles.execImageContainer}>
+        <div
+          className={styles.execImageContainer}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+        >
           <img className={styles.exec} src={Execs} alt="CSEA Executives" />
         </div>
-      </div>
+      </motion.div>
 
       {/* Sponsors */}
       <div className={styles.sponsorContainer}>
@@ -90,13 +129,18 @@ const LandingPage = () => {
         <h3 className={styles.subtitle}>
           We are proud to share our sponsors for 2023
         </h3>
-        <div className={styles.sponsorImageContainer}>
+        <motion.div
+          className={styles.sponsorImageContainer}
+          initial={{ opacity: 0, borderRadius: "50%" }}
+          whileInView={{ opacity: 1, borderRadius: 0 }}
+          transition={{ delay: 0.5 }}
+        >
           <img
             className={styles.sponsors}
             src={Sponsors}
             alt="2023 CSEA Sponsors"
           />
-        </div>
+        </motion.div>
       </div>
     </>
   );
