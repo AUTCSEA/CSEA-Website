@@ -45,7 +45,6 @@ MAIN IMAGE
   background-color: white;
   position: absolute;
   right: 10%;
-  bottom: 0%;
   color: var(--secondary);
   border-radius: 5px;
   box-shadow: 5px 5px 20px black;
@@ -71,7 +70,8 @@ MAIN IMAGE
   align-content: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 5rem;
-  margin: 3rem 0;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 /****************
@@ -84,7 +84,7 @@ WHAT WE DO
   align-items: center;
   justify-content: center;
   background-color: #e7eef1;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 /****************
@@ -96,7 +96,6 @@ BECOME A MEMBER
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin: 5rem 0;
 }
 
 .memberTitle {
@@ -104,11 +103,10 @@ BECOME A MEMBER
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .exec {
-  margin: 1rem 0;
   width: 100%;
 }
 
@@ -127,6 +125,7 @@ SPONSORSHIP
 }
 
 .subtitle {
+  font-size: 1.25rem;
   text-align: center;
   color: white;
 }
@@ -149,21 +148,23 @@ SPONSORSHIP
   .mission {
     bottom: 40%;
   }
+
+  .grid {
+    gap: 8rem;
+  }
+
   .memberContainer {
     flex-direction: row;
   }
 
   .memberTitle {
     gap: 0.5rem;
+    width: 26rem;
   }
 
   .exec {
     margin: 0;
-    width: 32rem;
-  }
-
-  .sponsors {
-    width: 60%;
+    max-width: 26rem;
   }
 
   .sponsors {
