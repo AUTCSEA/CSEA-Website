@@ -3,7 +3,7 @@ MAIN IMAGE
 ****************/
 
 .imageContainer {
-  height: 32rem;
+  height: 38rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,15 +106,6 @@ BECOME A MEMBER
   width: 100%;
 }
 
-.execImageContainer {
-  display: flex;
-  height: 18rem;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  overflow: hidden;
-}
-
 /****************
 SPONSORSHIP
 ****************/
@@ -157,8 +148,8 @@ SPONSORSHIP
     gap: 0.5rem;
   }
 
-  .execImageContainer {
-    width: 36rem;
+  .exec {
+    width: 24rem;
   }
 
   .sponsors {
