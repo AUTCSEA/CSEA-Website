@@ -46,16 +46,16 @@
             "linkedin": "https://www.linkedin.com/in/srushti-mb-922046205/"
         },
         {
+            "name": "Lara Jaber",
+            "position": "Lead Marketing",
+            "imgPath": Lara,
+            "linkedin": "https://www.linkedin.com/in/lara-jaber/"
+        },
+        {
             "name": "Azel Saralaeva",
             "position": "Email Marketing",
             "imgPath": Azel,
             "linkedin": "https://www.linkedin.com/in/azel-saralaeva-826030183/"
-        },
-        {
-            "name": "Lara Jaber",
-            "position": "Lead Marketing Exec",
-            "imgPath": Lara,
-            "linkedin": "https://www.linkedin.com/in/lara-jaber/"
         },
         {
             "name": "Toby McIsaac",

@@ -16,7 +16,7 @@ import InfoIcon from '@mui/icons-material/InfoOutlined';const AvatarCard = (prop
           <a href={props.linkedin} target="_blank" className={styles.link}>
             <LinkedInIcon
               sx={{ color: "black" }}
-              fontSize="medium"
+              fontSize="large"
               className={styles.logo}
             />
           </a>
