@@ -122,13 +122,7 @@ const LandingPage = () => {
           />
         </div>
 
-        <div
-          className={styles.execImageContainer}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-        >
-          <img className={styles.exec} src={Execs} alt="CSEA Executives" />
-        </div>
+        <img className={styles.exec} src={Execs} alt="CSEA Executives" />
       </motion.div>
 
       {/* Sponsors */}
@@ -141,7 +135,7 @@ const LandingPage = () => {
           className={styles.sponsorImageContainer}
           initial={{ opacity: 0, borderRadius: "50%" }}
           whileInView={{ opacity: 1, borderRadius: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.25 }}
         >
           <img
             className={styles.sponsors}
