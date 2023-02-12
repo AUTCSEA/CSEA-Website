@@ -15,6 +15,21 @@ import Brain from "/icons/brain.png";
 
 import styles from "./LandingPage.module.css";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+
 const LandingPage = () => {
   return (
     <>
@@ -52,12 +67,13 @@ const LandingPage = () => {
           We are a student run club for AUT but any students from other
           education are welcome!
         </p>
-        <motion.div className={styles.grid}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.25, duration: 0.5 }}
-          >
+        <motion.div
+          className={styles.grid}
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+        >
+          <motion.div variants={item}>
             <Card
               title="Host Events"
               image={Event}
@@ -66,11 +82,7 @@ const LandingPage = () => {
             These events include hackathons, workshops and talk shows"
             />
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
+          <motion.div variants={item}>
             <Card
               title="Meet experts from industry"
               style="secondary"
@@ -79,11 +91,7 @@ const LandingPage = () => {
             with our hosts and gain knowledge about the software industry"
             />
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.75, duration: 0.5 }}
-          >
+          <motion.div variants={item}>
             <Card
               title="Gain future insights"
               style="primary"

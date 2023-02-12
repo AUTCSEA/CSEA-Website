@@ -144,7 +144,7 @@ SPONSORSHIP
 .sponsors {
   border-radius: 20px;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   box-shadow: 5px 5px 20px black;
 }
 
@@ -159,5 +159,9 @@ SPONSORSHIP
 
   .execImageContainer {
     width: 36rem;
+  }
+
+  .sponsors {
+    width: 60%;
   }
 }
