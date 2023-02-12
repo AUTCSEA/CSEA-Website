@@ -92,6 +92,7 @@ BECOME A MEMBER
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 5rem 0;
 }
 
 .memberTitle {
@@ -103,6 +104,7 @@ BECOME A MEMBER
 }
 
 .exec {
+  margin: 1rem 0;
   width: 100%;
 }
 
@@ -149,7 +151,8 @@ SPONSORSHIP
   }
 
   .exec {
-    width: 24rem;
+    margin: 0;
+    width: 32rem;
   }
 
   .sponsors {

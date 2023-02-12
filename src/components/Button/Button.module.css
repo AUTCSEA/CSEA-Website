@@ -5,7 +5,7 @@
   margin: 0.5rem;
   border: 2px solid var(--primary);
   cursor: pointer;
-  color: var(--secondary);
+  color: var(--primary);
   user-select: none;
   font-weight: bold;
 }
