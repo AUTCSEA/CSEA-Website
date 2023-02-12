@@ -1,11 +1,9 @@
 import React from "react";
 import styles from "./AvatarCard.module.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InfoIcon from "@mui/icons-material/Info";
-const AvatarCard = (props) => {
+import InfoIcon from '@mui/icons-material/InfoOutlined';const AvatarCard = (props) => {
   return (
     <div className={styles.cardContainer}>
-      {/* <> */}
       <div className={styles.imageContainer}>
       <InfoIcon
         sx={{ color: "white" }}
@@ -25,11 +23,6 @@ const AvatarCard = (props) => {
         </div>
         <img src={props.image} className={styles.image} />
       </div>
-      {/* <div className={styles.infoContainer}>
-        <h1 className={styles.nameHeader}>{props.name}</h1>
-        <h2 className={styles.positionHeader}>{props.position}</h2>
-      </div> */}
-      {/* </> */}
     </div>
   );
 };

@@ -2,15 +2,15 @@
     import Callum from "../../../assets/headshots/callum.jpg"
     import Peter from "../../../assets/headshots/peter.png"
     import Sophie from "../../../assets/headshots/sophie.jpg"
-    // import Srushti from "../../../assets/headshots/srushti.jpg"
-    // import Azel from "../../../assets/headshots/azel.jpg"
-    // import Lara from "../../../assets/headshots/lara.jpg"
+    import Srushti from "../../../assets/headshots/srushti.png"
+    import Azel from "../../../assets/headshots/azel.png"
+    import Lara from "../../../assets/headshots/lara.jpg"
     import Toby from "../../../assets/headshots/toby.jpg"
     import Bruce from "../../../assets/headshots/bruce.png"
     import Cassidy from "../../../assets/headshots/cassidy.jpg"
-    // import Nicole from "../../../assets/headshots/nicole.jpg"
+    import Nicole from "../../../assets/headshots/nicole.png"
     import Sarah from "../../../assets/headshots/sarah.jpg"
-    // import Daniel from "../../../assets/headshots/daniel.jpg"
+    import Daniel from "../../../assets/headshots/daniel.jpeg"
 
     
     
@@ -42,19 +42,19 @@
         {
             "name": "Srushti MN",
             "position": "Outreach Executive",
-            "imgPath": Peter,
+            "imgPath": Srushti,
             "linkedin": "https://www.linkedin.com/in/srushti-mb-922046205/"
         },
         {
             "name": "Azel Saralaeva",
             "position": "Email Marketing",
-            "imgPath": Sophie,
+            "imgPath": Azel,
             "linkedin": "https://www.linkedin.com/in/azel-saralaeva-826030183/"
         },
         {
             "name": "Lara Jaber",
             "position": "Lead Marketing Exec",
-            "imgPath": Bruce,
+            "imgPath": Lara,
             "linkedin": "https://www.linkedin.com/in/lara-jaber/"
         },
         {
@@ -78,7 +78,7 @@
         {
             "name": "Nicole Potter",
             "position": "General Executive",
-            "imgPath": Ivan,
+            "imgPath": Nicole,
             "linkedin": "https://www.linkedin.com/in/nicolemareepotter/"
         },
         {
@@ -90,7 +90,7 @@
         {
             "name": "Daniel Lip",
             "position": "General Executive",
-            "imgPath": Ivan,
+            "imgPath": Daniel,
             "linkedin": "https://www.linkedin.com/in/daniellip/"
         }
         
