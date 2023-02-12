@@ -2,14 +2,14 @@ import Card from "../../components/Card/Card";
 import Button from "../../components/Button/Button";
 
 // Images
-import MainImage from "../../assets/images/bg-main.jpg";
-import Sponsors from "../../assets/images/2023-Sponsors.png";
-import Execs from "../../assets/images/execs.jpg";
+import MainImage from "/images/bg-main.jpg";
+import Sponsors from "/images/2023-Sponsors.png";
+import Execs from "/images/execs.jpg";
 
 // Icons
-import Event from "../../assets/icons/event.png";
-import Coach from "../../assets/icons/coach.png";
-import Brain from "../../assets/icons/brain.png";
+import Event from "/icons/event.png";
+import Coach from "/icons/coach.png";
+import Brain from "/icons/brain.png";
 
 import styles from "./LandingPage.module.css";
 

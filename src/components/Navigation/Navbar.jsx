@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../../assets/images/Orange_CSEA.png";
+import logo from "/images/Orange_CSEA.png";
 
 import MobileNav from "./MobileNav";
 
