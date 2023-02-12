@@ -25,6 +25,17 @@ const Navbar = (props) => {
           <ul className={styles.mobileOverlay}>
             <li className={styles.listItem}>
               <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                onClick={closeMobileNav}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className={styles.listItem}>
+              <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
@@ -35,15 +46,17 @@ const Navbar = (props) => {
               </NavLink>
             </li>
             <li className={styles.listItem}>
-              <Link to="" onClick={closeMobileNav}>
+              <Link to="/sponsors" onClick={closeMobileNav}>
                 Sponsors
               </Link>
             </li>
             <li className={styles.listItem}>
-              <Link to="">Events</Link>
+              <Link to="/events">Events</Link>
             </li>
             <li className={styles.listItem}>
-              <Link to="">Become a member</Link>
+              <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
+                Become a member
+              </Link>
             </li>
           </ul>
         </MobileNav>
@@ -68,10 +81,24 @@ const Navbar = (props) => {
                 </NavLink>
               </li>
               <li className={styles.listItem}>
-                <Link to="">Sponsors</Link>
+                <NavLink
+                  to="/sponsors"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  Sponsors
+                </NavLink>
               </li>
               <li className={styles.listItem}>
-                <Link to="">Events</Link>
+                <NavLink
+                  to="/events"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  Events
+                </NavLink>
               </li>
               <li className={styles.listItem}>
                 <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">

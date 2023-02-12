@@ -21,6 +21,10 @@
   margin-left: 4.5rem;
 }
 
+.logo:hover {
+  box-shadow: 1px 1px 5px var(--secondary);
+}
+
 .linksWrapper {
   display: flex;
   flex-direction: row;
@@ -35,8 +39,12 @@
   padding: 20px;
 }
 
+.listItem:hover {
+  color: black;
+}
+
 .active {
-  color: grey;
+  color: var(--secondary);
 }
 
 a {
@@ -51,6 +59,10 @@ a {
   align-items: center;
   width: 100%;
   padding-right: 20px;
+}
+
+.icon {
+  cursor: pointer;
 }
 
 .mobileOverlay {
@@ -79,7 +91,8 @@ a {
     position: absolute;
     right: 0;
     width: 10rem;
-    background-color: red;
+    background-color: var(--secondary);
+    border-bottom-left-radius: 5px;
   }
 
   .hide {

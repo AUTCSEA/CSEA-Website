@@ -79,7 +79,9 @@ const LandingPage = () => {
           />
         </div>
 
-        <img className={styles.exec} src={Execs} alt="CSEA Executives" />
+        <div className={styles.execImageContainer}>
+          <img className={styles.exec} src={Execs} alt="CSEA Executives" />
+        </div>
       </div>
 
       {/* Sponsors */}
