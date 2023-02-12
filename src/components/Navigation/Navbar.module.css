@@ -47,6 +47,10 @@
   color: var(--secondary);
 }
 
+.mobileActive {
+  color: var(--primary);
+}
+
 a {
   text-decoration: none;
   color: white;

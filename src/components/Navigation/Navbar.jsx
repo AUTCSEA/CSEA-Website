@@ -27,7 +27,7 @@ const Navbar = (props) => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive ? styles.active : undefined
+                  isActive ? styles.mobileActive : undefined
                 }
                 onClick={closeMobileNav}
               >
@@ -38,7 +38,7 @@ const Navbar = (props) => {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  isActive ? styles.active : undefined
+                  isActive ? styles.mobileActive : undefined
                 }
                 onClick={closeMobileNav}
               >
@@ -46,12 +46,26 @@ const Navbar = (props) => {
               </NavLink>
             </li>
             <li className={styles.listItem}>
-              <Link to="/sponsors" onClick={closeMobileNav}>
+              <NavLink
+                to="/sponsors"
+                className={({ isActive }) =>
+                  isActive ? styles.mobileActive : undefined
+                }
+                onClick={closeMobileNav}
+              >
                 Sponsors
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.listItem}>
-              <Link to="/events">Events</Link>
+              <NavLink
+                to="/events"
+                className={({ isActive }) =>
+                  isActive ? styles.mobileActive : undefined
+                }
+                onClick={closeMobileNav}
+              >
+                Events
+              </NavLink>
             </li>
             <li className={styles.listItem}>
               <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
