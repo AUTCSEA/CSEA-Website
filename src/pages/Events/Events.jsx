@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <>
       <div className={styles.imageContainer}>
-        <h1 style={{ color: "white" }}>Upcoming Events</h1>
+        <h1 className={styles.header}>Upcoming Events</h1>
       </div>
       <div className={styles.eventsContainer}>
         <div className={styles.cardsWrapper}>

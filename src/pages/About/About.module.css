@@ -1,5 +1,3 @@
-
-
 .imageContainer {
   display: flex;
   flex-direction: row;
@@ -7,13 +5,21 @@
   justify-content: center;
   background-color: var(--secondary);
   width: 100%;
-  height: 20rem;
+  height: 15rem;
 }
-
 .image {
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+.header {
+  color: white;
+  margin-top: 20px;
+}
+
+.title {
+  color: white;
+  margin-top: 50px;
 }
 
 .cardsWrapper {
@@ -32,6 +38,12 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: --secondary;
+  /* background-color: var(--primary); */
+  margin-bottom: 2rem;
 }
 
+@media (width <= 768px) {
+.header{
+  font-size: 1.8em;
+}
+}

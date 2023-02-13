@@ -11,7 +11,7 @@
     display: flex;
     height: 12rem;
     width: 100%;
-    poisition: relative;
+    position: relative;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -48,28 +48,49 @@
 
 .date {
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .eventButton {
+    border-style: none;
+    box-shadow: 0px 25px 28px -11px rgba(0, 0, 0, 0.52);
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
     width: 8rem;
     height: 2rem;
-    background-color: var(--primary);
-    border-radius: 10px;
-    align-self: flex-end;
-    margin: 10px;
-    box-shadow: 0px 25px 28px -11px rgba(0, 0, 0, 0.52);
+    background-color: var(--secondary);
+    color: white;
+    font-size: 1em;
+    border-radius: 20px;
+    margin: 1rem;
+    cursor: pointer;
 }
 
-.buttonText {
-    color: black;
-    font-weight: 500;
+.eventButton:enabled:hover {
+    background-color: var(--primary);
+}
+
+.eventButton:disabled {
+    opacity: 20%;
+    cursor: auto;
+}
+
+.buttonAnchor {
+    display: flex;
+    align-self: flex-end;
+}
+
+
+@media (width <=375px) {
+    .cardContainer {
+        width: 18rem;
+    }
 }

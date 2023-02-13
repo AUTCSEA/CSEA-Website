@@ -1,6 +1,6 @@
 .cardContainer {
     display: flex;
-    width: 150px;
+    width: 10rem;
     height: 10rem;
     box-shadow: 5px 5px 20px black;
     border-radius: 25px;
@@ -23,6 +23,7 @@
     opacity: 85%;
     transition: all 0.2s ease-in-out;
 }
+
 
 .infoLogo {
     position: absolute;
@@ -61,12 +62,12 @@
 
 
 .nameHeader {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
 .positionHeader {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 200;
 }
 
