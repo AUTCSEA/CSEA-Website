@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
-import About from "./pages/About/About";
-import Events from "./pages/Events/Events";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import EventsPage from "./pages/EventsPage/EventsPage";
 
 import Navbar from "./components/Navigation/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutPage />,
       },
       {
         path: "/events",
-        element: <Events />,
+        element: <EventsPage />,
       },
     ],
   },

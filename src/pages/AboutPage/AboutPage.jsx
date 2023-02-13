@@ -1,10 +1,10 @@
-import styles from "./About.module.css";
+import styles from "./AboutPage.module.css";
 import MainImage from "../../../public/images/bg-main.jpg";
 import AvatarCard from "../../components/AvatarCard/AvatarCard";
 import aboutData from "./data/aboutData.js";
 import { motion } from "framer-motion";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       <div className={styles.imageContainer}>
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

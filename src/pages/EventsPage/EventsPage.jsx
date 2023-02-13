@@ -1,9 +1,9 @@
-import styles from "./Events.module.css";
+import styles from "./EventsPage.module.css";
 import EventCard from "../../components/EventCard/EventCard";
 import eventsData from "./data/eventsData.js";
 // import { motion } from "framer-motion";
 
-const Events = () => {
+const EventsPage = () => {
   return (
     <>
       <div className={styles.imageContainer}>
@@ -29,4 +29,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default EventsPage;

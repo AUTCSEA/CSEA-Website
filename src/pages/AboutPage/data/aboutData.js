@@ -11,6 +11,9 @@
     import Nicole from "../../../assets/headshots/nicole.png"
     import Sarah from "../../../assets/headshots/sarah.jpg"
     import Daniel from "../../../assets/headshots/daniel.jpeg"
+    import Charles from "../../../assets/headshots/charles.jpg"
+    import Matthew from "../../../assets/headshots/matthew.jpg"
+
 
     
     
@@ -92,6 +95,18 @@
             "position": "General Executive",
             "imgPath": Daniel,
             "linkedin": "https://www.linkedin.com/in/daniellip/"
+        },
+        {
+            "name": "Charles Monaghan",
+            "position": "External Board",
+            "imgPath": Charles,
+            "linkedin": "https://www.linkedin.com/in/charlesmonaghan/"
+        },
+        {
+            "name": "Matthew Kuo",
+            "position": "External Board",
+            "imgPath": Matthew,
+            "linkedin": "https://www.linkedin.com/in/matthewkuonz/"
         }
         
     ]
