@@ -89,8 +89,9 @@
 }
 
 
-@media (width <=375px) {
+@media (width <=425px) {
     .cardContainer {
         width: 18rem;
+        margin-bottom: 1rem;
     }
 }
