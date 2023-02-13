@@ -1,0 +1,78 @@
+.cardContainer {
+    display: flex;
+    width: 150px;
+    height: 10rem;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 25px;
+    background-color: #e7eef1;
+    ;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.imageContainer:hover>.overlay {
+    display: block;
+}
+
+.overlay:hover {
+    opacity: 85%;
+    transition: all 0.2s ease-in-out;
+}
+
+.infoLogo {
+    position: absolute;
+    opacity: 0;
+    margin: 5px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.infoContainer {
+    background-color: #e7eef1;
+}
+
+.overlay {
+    background-color: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding-top: 30%;
+}
+
+
+.nameHeader {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.positionHeader {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+@media (width <=768px) {
+    .infoLogo {
+        opacity: 1;
+    }
+
+}

@@ -6,6 +6,11 @@
   --secondary: #3c3c3c;
 }
 
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
