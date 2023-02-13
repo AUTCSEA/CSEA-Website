@@ -44,8 +44,12 @@ const LandingPage = () => {
         />
         <motion.div
           className={styles.mission}
-          initial={{ opacity: 0, scale: 0.5, bottom: "50%" }}
-          animate={{ opacity: 1, scale: 1, bottom: "40%" }}
+          initial={{ opacity: 0, scale: 0.5, bottom: "40%" }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            bottom: window.innerWidth < 769 ? "5%" : "30%",
+          }}
           transition={{ duration: 0.5 }}
         >
           <div className={styles.bar} />
@@ -53,7 +57,7 @@ const LandingPage = () => {
             <h2 className={styles.brand}>
               Computer Science & Engineering Association
             </h2>
-            <h3 style={{ fontWeight: "normal" }}>
+            <h3 style={{ fontWeight: "500" }}>
               Connecting students with the industry
             </h3>
           </div>
@@ -63,7 +67,7 @@ const LandingPage = () => {
       {/* What we do */}
       <div className={styles.container}>
         <h1 className={styles.title}>What we do?</h1>
-        <p>
+        <p className={styles.description}>
           We are a student run club for AUT but any students from other
           education are welcome!
         </p>
@@ -111,7 +115,7 @@ const LandingPage = () => {
       >
         <div className={styles.memberTitle}>
           <h1>Become a member!</h1>
-          <p style={{ marginBottom: "2rem" }}>
+          <p style={{ marginBottom: "2rem", fontSize: "1.1rem" }}>
             Get notified for our events and workshops
           </p>
           <Button
@@ -128,9 +132,9 @@ const LandingPage = () => {
       {/* Sponsors */}
       <div className={styles.sponsorContainer}>
         <h1 className={styles.sponsorTitle}>Our Sponsors</h1>
-        <h3 className={styles.subtitle}>
+        <p className={styles.subtitle}>
           We are proud to share our sponsors for 2023
-        </h3>
+        </p>
         <motion.div
           className={styles.sponsorImageContainer}
           initial={{ opacity: 0, borderRadius: "50%" }}

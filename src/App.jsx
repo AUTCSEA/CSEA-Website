@@ -13,9 +13,7 @@ import "./App.css";
 const NavbarWrapper = () => {
   return (
     <>
-      <nav>
-        <Navbar />
-      </nav>
+      <Navbar />
       <main>
         <Outlet />
       </main>
