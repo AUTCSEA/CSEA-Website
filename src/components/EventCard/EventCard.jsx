@@ -3,10 +3,6 @@ import styles from "./EventCard.module.css";
 import CSEA from "../../../public/images/CSEA_logo.png";
 
 const EventCard = (props) => {
-  const handleLearnMore = (event) => {
-    console.log(event.target);
-  };
-
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
@@ -19,18 +15,13 @@ const EventCard = (props) => {
       <div className={styles.contentContainer}>
         <h3 className={styles.date}>{props.date || "TBA"}</h3>
         <h1 className={styles.title}>{props.title}</h1>
-        {/* {props.date && props.postURL ? ( */}
 
         {props.date && props.postURL ? (
           <a className={styles.buttonAnchor} href={props.postURL}>
             <button className={styles.eventButton}>Learn more</button>
           </a>
         ) : (
-          <button
-            onClick={handleLearnMore}
-            className={styles.eventButton}
-            disabled
-          >
+          <button className={styles.eventButton} disabled>
             Learn more
           </button>
         )}

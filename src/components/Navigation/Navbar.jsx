@@ -105,7 +105,6 @@ const Navbar = (props) => {
                 </NavLink>
               </li>
               <li className={styles.listItem}>
-                {/* <Button title="Become a member" /> */}
                 <Link to="https://forms.gle/XoN5LsgsrqH6SkX28">
                   Become a member
                 </Link>

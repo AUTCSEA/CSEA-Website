@@ -7,7 +7,7 @@ export default [
     day: "27", // Empty string defaults to TBA (i.e to be announced)
     month: "Feb", // Empty string defaults to TBA (i.e to be announced)
     imgPath: "", // Empty string defaults to CSEA logo
-    postURL: "google.com", // Show more button will be hidden if empty or no date is provided
+    postURL: "", // Show more button will be hidden if empty or no date is provided
   },
   {
     title: "Pub Quiz",
@@ -15,6 +15,6 @@ export default [
     day: "", // Empty string defaults to TBA (i.e to be announced)
     month: "", // Empty string defaults to TBA (i.e to be announced)
     imgPath: Pubquiz, // Empty string defaults to CSEA logo
-    postURL: "facebook.com", // Show more button will be hidden if empty or no date is provided
+    postURL: "", // Show more button will be hidden if empty or no date is provided
   },
 ];
