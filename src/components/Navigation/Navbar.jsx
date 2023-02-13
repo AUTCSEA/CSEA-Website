@@ -48,17 +48,6 @@ const Navbar = (props) => {
             </li>
             <li className={styles.listItem}>
               <NavLink
-                to="/sponsors"
-                className={({ isActive }) =>
-                  isActive ? styles.mobileActive : undefined
-                }
-                onClick={closeMobileNav}
-              >
-                Sponsors
-              </NavLink>
-            </li>
-            <li className={styles.listItem}>
-              <NavLink
                 to="/events"
                 className={({ isActive }) =>
                   isActive ? styles.mobileActive : undefined
@@ -85,6 +74,16 @@ const Navbar = (props) => {
 
           <div className={styles.linksWrapper}>
             <ul>
+            <li className={styles.listItem}>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
               <li className={styles.listItem}>
                 <NavLink
                   to="/about"
@@ -93,16 +92,6 @@ const Navbar = (props) => {
                   }
                 >
                   About Us
-                </NavLink>
-              </li>
-              <li className={styles.listItem}>
-                <NavLink
-                  to="/sponsors"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  Sponsors
                 </NavLink>
               </li>
               <li className={styles.listItem}>

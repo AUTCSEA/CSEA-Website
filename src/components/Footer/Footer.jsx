@@ -40,8 +40,8 @@ const Footer = () => {
           </Link>
         </li>
         <li className={styles.link}>
-          <Link className={styles.footerLink} to="/contact">
-            Contact
+          <Link className={styles.footerLink} to="/events">
+            Events
           </Link>
         </li>
       </ul>
