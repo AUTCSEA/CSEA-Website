@@ -42,7 +42,7 @@ const LandingPage = () => {
           src={MainImage}
           className={styles.image}
         />
-        <motion.div
+        {/* <motion.div
           className={styles.mission}
           initial={{ opacity: 0, scale: 0.5, bottom: "40%" }}
           animate={{
@@ -61,7 +61,7 @@ const LandingPage = () => {
               Connecting students with the industry
             </h3>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* What we do */}
