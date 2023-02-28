@@ -1,7 +1,6 @@
 import styles from "./EventsPage.module.css";
 import EventCard from "../../components/EventCard/EventCard";
 import eventsData from "./data/eventsData.js";
-// import { motion } from "framer-motion";
 
 const EventsPage = () => {
   return (

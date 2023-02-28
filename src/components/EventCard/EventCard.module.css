@@ -4,9 +4,10 @@
     height: 20rem;
     width: 25rem;
     border-radius: 1rem;
-    box-shadow: 0px 9px 18px -1px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0px 9px 18px -1px rgba(0, 0, 0, 0.7); */
+    /* filter: drop-shadow(1px 1px 0.7px #000); */
+    filter: drop-shadow(2px 1px 5px #000);
 }
-
 .imageContainer {
     display: flex;
     height: 12rem;
@@ -31,7 +32,9 @@
     width: 5rem;
     background-color: var(--primary);
     border-radius: 1rem 0rem 1rem 0rem;
-    box-shadow: 0px 9px 18px -1px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0px 9px 18px -1px rgba(0, 0, 0, 0.7); */
+    /* filter: drop-shadow(5px 5px 10px #000); */
+
     position: absolute;
 }
 
@@ -58,7 +61,6 @@
 
 .eventButton {
     border-style: none;
-    box-shadow: 0px 25px 28px -11px rgba(0, 0, 0, 0.52);
     align-self: flex-end;
     display: flex;
     justify-content: center;

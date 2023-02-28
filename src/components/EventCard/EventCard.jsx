@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./EventCard.module.css";
-import CSEA from "../../../public/images/CSEA_logo.png";
+import CSEA from "../../../public/images/Grey_CSEA.png";
 
 const EventCard = (props) => {
   return (

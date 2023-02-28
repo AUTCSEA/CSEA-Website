@@ -5,7 +5,7 @@ import Button from "../../components/Button/Button";
 
 // Images
 import MainImage from "/images/bg-main.jpg";
-import Sponsors from "/images/2023-Sponsors.png";
+import Sponsors from "/images/2023-Sponsors_new.png";
 import Execs from "/images/execs.jpg";
 
 // Icons
@@ -133,7 +133,7 @@ const LandingPage = () => {
       <div className={styles.sponsorContainer}>
         <h1 className={styles.sponsorTitle}>Our Sponsors</h1>
         <p className={styles.subtitle}>
-          We are proud to share our sponsors for 2023
+          We are proud to share our sponsors for 2023.  
         </p>
         <motion.div
           className={styles.sponsorImageContainer}

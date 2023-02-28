@@ -117,19 +117,19 @@ SPONSORSHIP
 ****************/
 
 .sponsorContainer {
-  background-color: var(--secondary);
+  background-color: #e7eef1;
 }
 
 .sponsorTitle {
   padding: 3rem 0;
   text-align: center;
-  color: white;
+  color: var(--secondary);
 }
 
 .subtitle {
   font-size: 1.25rem;
   text-align: center;
-  color: white;
+  color: var(--secondary);
 }
 
 .sponsorImageContainer {
@@ -143,7 +143,6 @@ SPONSORSHIP
   border-radius: 20px;
   overflow: hidden;
   width: 90%;
-  box-shadow: 5px 5px 20px black;
 }
 
 @media (width >= 768px) {
